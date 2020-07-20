@@ -1,0 +1,193 @@
+:root{
+    --primary-blue: #36a9e1;
+    --secondary-blue: #1b7fb1;
+    --primary-red: #ff1616;
+    --bkg-aqua: #7fffd4;
+}
+
+/*Header*/
+header{
+    background-color: var(--bkg-aqua);
+    padding: 2% 7%;
+}
+
+.title-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.brand-img{
+    width: 80px;
+}
+
+.brand1{
+    color: var(--primary-red);
+}
+
+.navbar-brand{
+    color: var(--primary-blue);
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.nav-link{
+    color: var(--secondary-blue);
+    font-size: 1.25rem;
+}
+
+.nav-link:hover{
+    color: var(--primary-red);
+}
+
+.title-text{
+    color: var(--secondary-blue);
+    margin: auto 0;
+    line-height: 1.5;
+    max-width: 40%;
+}
+
+.title-heading{
+    font-size: 2.5rem;
+    padding-bottom: 16px;
+}
+
+.download-badge{
+    height: 3rem;
+    margin: 10px;
+}
+
+.phone-img{
+    height: 500px;
+    float: right;
+    transform: rotate(15deg);
+}
+
+header button{
+    background-color: red;
+}
+
+.fa-bars{
+    color: var(--secondary-blue);
+    font-size: 1.5rem;
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+/*features*/
+.features-container{
+    padding: 2% 7%;
+}
+
+.feature{
+    padding: 2%;
+    text-align: center;
+    color: var(--secondary-blue);
+}
+
+.feature h3{
+    margin: 10px;
+}
+
+.feature p{
+    font-size: 1.15rem;
+}
+
+.feature-icon{
+    font-size: 3rem;
+    color: var(--primary-red);
+}
+
+/*Testimonials*/
+.testomonial{
+    background-color: var(--primary-blue);
+    padding: 4% 7%;
+}
+
+.carousel-item{
+    text-align: center;
+    height: 500px;
+    color: white;
+}
+
+.carousel-item p{
+    font-size: 3.5rem;
+}
+
+.carousel-item h3{
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.carousel-item img{
+    border-radius: 50%;
+    width: 150px;
+    margin: 15px;
+}
+
+/*Misson*/
+.mission-container{
+    padding: 6% 7%;
+    text-align: center;
+    color: var(--secondary-blue);
+    line-height: 1.5;
+}
+
+.mission-container p{
+    font-size: 1.5rem;
+}
+
+.mission-container h2{
+    font-size: 2rem;
+}
+
+/*Footer*/
+.footer-container{
+    padding: 2% 7% 1%;
+    text-align: center;
+    background-color: var(--bkg-aqua);
+    color: var(--secondary-blue);
+}
+
+.footer-container p{
+    margin: 15px;
+}
+
+/*Small screens*/
+@media (max-width: 1028px){
+    header{
+        text-align: center;
+    }
+
+    .navbar-brand{
+        font-size: 2rem;
+    }
+    
+    .title-text{
+        max-width: 80%;
+        margin: 20px 0;
+        font-size: 1.25rem;
+    }
+
+    .phone-img{
+        transform: rotate(0deg);
+    }
+
+    .carousel-item{
+        height: 400px;
+    }
+
+    .carousel-item p{
+        font-size: 2rem;
+    }
+    
+    .carousel-item h3{
+        font-size: 1.5rem;
+    }
+    
+    .carousel-item img{
+        width: 100px;
+    }
+}
